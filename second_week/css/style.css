@@ -24,7 +24,7 @@ body {
     padding: 20px 0;
     min-height: 100vh;
 }
-.header__logo {
+.logo {
     max-width: 101px;
 }
 .header__inner_center{
@@ -277,25 +277,27 @@ body {
     color: #48555B;
 }
 .offer {
-    padding: 40px 0;
-    max-width: 100%;
+    padding: 150px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 .offer__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 0 40%;
-    width: 40%;
-    margin: 100px auto;
+    text-align: center;
+
 }
 .offer__title {
+    max-width: 350px;
     font-weight: 700;
     font-size: 30px;
     text-transform: none;
     text-align: center;
     padding: 20px 0;
 }
-.offer__button {}
+..offer__button {}
+.offer__title {
+    display: inline-block;
+}
 .offer__button_btn {}
 
 
@@ -303,16 +305,16 @@ body {
     background: #171819;
 }
 .footer__singup {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 15px 0;
+    align-items: center; */
+    padding: 30px 0;
+ 
 }
 .form {
-    flex: 0 0 100%;
-    max-width: 100%;
     margin: 0 auto;
-    text-align: center;
+    max-width: 800px;
+    display: flex;
 }
 .form__title {
     display: inline-block;
@@ -321,15 +323,17 @@ body {
     font-size: 22px;
     font-weight: 600;
     padding: 10px 50px;
+    margin: 0;
 }
 .form__email {
-    padding: 10px 100px 10px 10px;
+    padding: 10px;
+    min-width: 250px;
     border: 1px solid #FFFFFF;
 }
 .form__btn {
-    padding: 10px 40px;
-    border: 0 solid #00A4E5;
-    margin: 0;
+    min-width: 150px;
+    border: 0;
+
 }
 
 
@@ -342,13 +346,12 @@ body {
     color: #FFFFFF;
     padding: 5px 0;
 }
-
+.footer__wrap {
+    background: #141A20;
+}
 .footer__contacts {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    background: #141A20;
-
     
 }
 .footer__contacts_company {
@@ -368,21 +371,16 @@ body {
    
 }
 .footer__contacts_list {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 125px;
+    column-count: 3;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 .footer__contacts_li {
-    flex: 1 0 20%;
+
    
 }
 .footer__contacts_link {
-    
     font-weight: 600;
     font-size: 11px;
     line-height: 25px;
@@ -390,7 +388,9 @@ body {
     text-decoration: none;
     color: #FFFFFF;
 }
-
+.footer__contacts_link:hover {
+    color: #00A4E5;;
+}
 .footer__contacts_contactus {
     flex: 0 0 10%;
     max-width: 10%;
@@ -400,19 +400,23 @@ body {
     line-height: 16px;
     color: #FFFFFF;
     padding: 2px 0;
+    text-decoration: none;
 }
 
 .footer__contacts_socials {
+    display: flex;
     flex: 0 0 15%;
     max-width: 15%;
     padding: 30px 0;
 }
 
 .socials__logo {
-    display: inline-block;
+    display: block;
+    padding: 0 15px;
+    
 }
 .socials__logo_img {
-    max-width: 100%;
+   
 }
 
 .footer__contacts_bottom {
